@@ -1198,6 +1198,86 @@ body{background-image:radial-gradient(circle at 50% 15%,rgba(255,255,255,.75),tr
 }
 
 </style>
+
+<style id="scrollable-sticky-notes">
+/* ===== Scrollable sticky-note paragraphs ===== */
+.notes-one .sticky-memory {
+    height: 330px;
+    min-height: 330px;
+    overflow: hidden;
+}
+
+.notes-one .sticky-note-content {
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 38px 22px 22px;
+}
+
+.notes-one .sticky-note-content .note-heart {
+    flex: 0 0 auto;
+}
+
+.notes-one .sticky-note-content p {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 8px 8px 2px;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(92,83,56,.35) transparent;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.notes-one .sticky-note-content p::-webkit-scrollbar {
+    width: 5px;
+}
+
+.notes-one .sticky-note-content p::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.notes-one .sticky-note-content p::-webkit-scrollbar-thumb {
+    background: rgba(92,83,56,.3);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .notes-one .sticky-memory {
+        height: 330px;
+        min-height: 330px;
+    }
+
+    .notes-one .sticky-note-content {
+        padding: 35px 16px 18px;
+    }
+
+    .notes-one .sticky-note-content p {
+        padding-right: 7px;
+        font-size: clamp(1.12rem, 5vw, 1.45rem);
+        line-height: 1.42;
+    }
+}
+
+@media (max-width: 380px) {
+    .notes-one .sticky-memory {
+        height: 310px;
+        min-height: 310px;
+    }
+
+    .notes-one .sticky-note-content {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+</style>
+
 </head><body>
 <div class="bg-hearts"><span style="left:10%;width:30px;height:30px"></span><span style="left:25%;width:20px;height:20px"></span><span style="left:40%;width:25px;height:25px"></span><span style="left:60%;width:35px;height:35px"></span><span style="left:75%;width:18px;height:18px"></span><span style="left:90%;width:28px;height:28px"></span></div><nav><a href="index.html" class="nav-logo">For Her ❤️</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="shayari.html">Shayari</a></li><li><a href="notes.html">Notes</a></li><li><a href="letter.html">Letter</a></li></ul></nav>
 <main class="notes-page"><div class="notes-intro" data-aos="fade-up"><div class="stage-kicker">A few things worth remembering</div><h1>Little Notes ❤️</h1><p>Some memories don't need photographs to stay special.</p></div>
